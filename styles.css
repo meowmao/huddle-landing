@@ -15,6 +15,12 @@ body{
     color: var(--white);
 }
 
+@media only screen and (min-width:992px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+    }
+}
+
 h1, p, img, a{
     padding: 0;
     margin: 0;
@@ -36,6 +42,14 @@ main .mockups{
     width: 100%;
 }
 
+@media only screen and (min-width:992px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+}
+
 main h1{
     margin-bottom: 15px;
 }
@@ -53,3 +67,7 @@ main a{
     min-width: 250px;
 }
 
+footer{
+    padding: 10px;
+    background: pink;
+}
