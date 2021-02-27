@@ -15,15 +15,18 @@ body{
     color: var(--white);
 }
 
-@media only screen and (min-width:992px){
-    body{
-        background-image: url(images/bg-desktop.svg);
-    }
-}
 
 h1, p, img, a{
     padding: 0;
     margin: 0;
+}
+
+
+@media only screen and (min-width:992px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        
+    }
 }
 
 main{
@@ -47,6 +50,7 @@ main .mockups{
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
+        text-align: left;
     }
 }
 
@@ -64,8 +68,16 @@ main a{
     background:var(--white);
     border-radius: 50px;
     display: inline-block;
+    text-align: center;
     min-width: 250px;
 }
+
+@media only screen and (min-width:992px){
+    main .right{
+        margin-left: 57px;
+    }
+}
+
 
 footer{
     padding: 10px;
